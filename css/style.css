@@ -3,13 +3,70 @@ body{
 }
 .wrapper{
     margin: 0 auto;
-    width: 960px;
+    max-width: 960px;
+}
+.kitchen-menu{
+    padding-left: 0;
+    text-align: justify;
+    font-size: 0;
+    background-color: #2a3644;
+    border-radius: 8px;
+    list-style: none;
+  }
+.kitchen-menu:after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+.kitchen-menu li:hover .kitchen-sub{
+    display: block;
+  }
+.kitchen-menu>li{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    border-right:1px solid white;
+    border-left: 1px solid white;
+}
+.kitchen-menu>li:first-child{
+    border-left: none;
+}
+.kitchen-menu>li:first-child:hover>a{
+    border-radius:8px 0 0 8px;
+}
+.kitchen-menu>li:last-child{
+    border-radius: none;
+}
+.kitchen-menu>li:last-child:hover>a{
+    border-radius: 0 8px 8px 0;
+}
+.kitchen-menu>li:hover>a{
+    background-color: #3f4852;
+    color: #fd8612;
+}
+.kitchen-menu a{
+    display: block;
+    padding: 5px 30px;
+    color: #fff;
+    text-decoration: none;
+}
+.kitchen-sub{
+    position: absolute;
+    display: none;
+    padding-top: 10px;
+    padding-left: 0;
+    background-color: #d2d4d5;
+}
+.kitchen-sub>li:hover>a{
+    color: #fd8612;
+    background-color: #2a3644;
 }
 h1{
     font-size: 24px;
     letter-spacing: 1px;
     color: #bfbfbf;
     font-weight: bold;
+    text-transform: uppercase;
 }
 header ul{
     list-style: none;
@@ -18,4 +75,40 @@ header ul{
 header ul a{
     text-decoration: none;
     color: #fff;
+}
+table{
+    width: 100%;
+}
+table tr{
+    border: 2px solid #c0c1c2;
+}
+thead{
+    background-color: #2a3644;
+}
+thead{
+    color: #fff;
+}
+tbody{
+    font-size: 15px;
+    color: #2a3644;
+}
+tbody:nth-child(odd){
+    background-color: #f2f2f2;
+}
+tbody:nth-child(even){
+    background-color: #e8e8e8;
+}
+.tnumber-name{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+.tnumber{
+    text-align: center;
+    font-size: 16px;
+    color: #2a3644;
+    padding: 21px 0;
+}
+.ttright{
+    text-align: right;
 }
