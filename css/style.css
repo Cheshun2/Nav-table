@@ -10,7 +10,7 @@ body{
     text-align: justify;
     font-size: 0;
     background-color: #2a3644;
-    border-radius: 8px;
+    border-radius: 3px;
     list-style: none;
   }
 .kitchen-menu:after{
@@ -25,37 +25,61 @@ body{
     position: relative;
     display: inline-block;
     font-size: 16px;
-    border-right:1px solid white;
-    border-left: 1px solid white;
+    border-right:1px solid #3f4852;
+    border-left: 1px solid #3f4852;
 }
 .kitchen-menu>li:first-child{
     border-left: none;
 }
 .kitchen-menu>li:first-child:hover>a{
-    border-radius:8px 0 0 8px;
+    border-radius:3px 0 0 3px;
 }
 .kitchen-menu>li:last-child{
     border-radius: none;
 }
 .kitchen-menu>li:last-child:hover>a{
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 3px 3px 0;
 }
+.kitchen-sub>li:hover>a,
 .kitchen-menu>li:hover>a{
     background-color: #3f4852;
     color: #fd8612;
 }
 .kitchen-menu a{
     display: block;
-    padding: 5px 30px;
+    padding: 15px 30px;
     color: #fff;
     text-decoration: none;
 }
+.kitchen-menu li:nd(:last-child) .row-sub{
+    left: 0;
+}
+.kitchen-menu li:last-child .row-sub{
+    right: 0;
+}
 .kitchen-sub{
-    position: absolute;
     display: none;
-    padding-top: 10px;
     padding-left: 0;
     background-color: #d2d4d5;
+    border-radius: 3px;
+}
+.row-sub{
+    position: absolute;
+    padding-top: 5px;
+    background-color: transparent;
+    width: 210px;
+}
+.kitchen-sub li:not(:last-child){
+    border-bottom: 1px solid #b9bdc1;
+}
+.kitchen-sub:hover{
+    border-radius: 3px;
+}
+.kitchen-sub li:last-child:hover{
+    border-radius: 0 0 3px 3px;
+}
+.kitchen-sub:last-child{
+    border: 0;
 }
 .kitchen-sub>li:hover>a{
     color: #fd8612;
