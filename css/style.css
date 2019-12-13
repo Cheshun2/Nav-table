@@ -7,14 +7,14 @@ body{
 }
 .menu,
 .kitchen-menu{
-    padding-left: 0;
-    text-align: justify;
     font-size: 0;
-    background-color: #2a3644;
-    border-radius: 3px;
+    text-align: justify;
     list-style: none;
+    border-radius: 3px;
+    padding-left: 0;
     margin-bottom: 40px;
-  }
+    background-color: #2a3644;
+}
 .menu:after,
 .kitchen-menu:after{
     content: "";
@@ -40,15 +40,17 @@ body{
     border-left: none;
 }
 .kitchen-menu>li:first-child:hover>a,
-.menu>li:first-child{
+.menu>li:first-child,
+.menu>li:first-child:hover>a{
     border-radius:3px 0 0 3px;
 }
 .kitchen-menu>li:last-child,
-.menu>li:first-child{
+.menu>li:last-child{
     border-right: none;
 }
 .kitchen-menu>li:last-child:hover>a,
-.menu>li:first-child{
+.menu>li:last-child,
+.menu>li:last-child:hover>a{
     border-radius: 0 3px 3px 0;
 }
 .kitchen-sub>li:first-child a{
@@ -128,6 +130,7 @@ header ul a{
 }
 .table{
     display: table;
+    border-radius: 3px;
     width: 100%;
 }
 .row{
@@ -142,6 +145,29 @@ header ul a{
 }
 .cell>a{
     padding: 15px 0;
+}
+.second-row-sub{
+    padding-left: 5px;
+}
+.second-sub,
+.last-sub{
+    position: absolute;
+    width: 100%;
+}
+.second-sub{
+    left: 100%;
+}
+.last-sub{
+    right: 100%;
+}
+.row-menu{
+
+    font-size: 0;
+}
+.main-menu,
+.social{
+    display: inline-block;
+    font-size: 15px;
 }
 table{
     width: 100%;
