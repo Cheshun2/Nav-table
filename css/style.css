@@ -22,7 +22,9 @@ body{
     width: 100%;
 }
 .menu li:hover .row-sub,
-.kitchen-menu li:hover .row-sub{
+.kitchen-menu li:hover .row-sub,
+.row-sub li:hover .second-sub,
+.second-sub li:hover .last-sub{
     display: block;
   }
 .menu>li,
@@ -82,13 +84,28 @@ body{
 .kitchen-menu li:last-child .row-sub{
     right: 0;
 }
-.row-sub{
+.row-sub,
+.second-sub,
+.last-sub{
     display: none;
     position: absolute;
-    padding-top: 5px;
     background-color: transparent;
     width: 210px;
     z-index: 1;
+}
+.row-sub{
+    padding-top: 5px;
+}
+.second-sub{
+    display: block;
+    left: 100%;
+    top: 52%;
+    padding-left: 5px;
+}
+.last-sub{
+    display: block;
+    right: 100%;
+    top: 77%;
 }
 .kitchen-sub{
     padding-left: 0;
@@ -153,12 +170,6 @@ header ul a{
 .last-sub{
     position: absolute;
     width: 100%;
-}
-.second-sub{
-    left: 100%;
-}
-.last-sub{
-    right: 100%;
 }
 .row-menu{
 
