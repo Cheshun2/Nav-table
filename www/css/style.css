@@ -60,7 +60,8 @@ ul{
 }
 .kitchen-menu>li:first-child:hover>a,
 .menu>li:first-child,
-.menu>li:first-child:hover>a{
+.menu>li:first-child:hover>a,
+.main-menu>li:first-child:hover>a{
     border-radius:3px 0 0 3px;
 }
 .kitchen-menu>li:last-child,
@@ -93,7 +94,7 @@ ul{
     color: #fff;
     text-decoration: none;
 }
-.kitchen-menu a{
+.kitchen-menu>a{
     padding: 15px 30px;
 }
 .menu li:not(:last-child) .row-sub,
@@ -126,9 +127,10 @@ ul{
     top: 77%;
 }
 .kitchen-sub{
+    font-size: 15px;
     padding-left: 0;
-    background-color: #d2d4d5;
     border-radius: 3px;
+    background-color: #d2d4d5;
 }
 .kitchen-sub li{
     display: block;
@@ -164,7 +166,8 @@ h2{
     text-transform: uppercase;
     margin-top: 0;
 }
-header ul{
+.kitchen-menu,
+.menu{
     list-style: none;
     background-color: #2a3644;
 }
@@ -202,6 +205,8 @@ header ul a{
 }
 .third-menu{
     font-size: 0;
+    background-color: #2a3644;
+    border-radius: 3px;
 }
 .main-menu>li,
 .social>li{
@@ -210,7 +215,7 @@ header ul a{
 .third-menu li{
     font-size: 16px;
 }
-.third-menu a{
+.third-menu>.main-menu>li>a{
     display: block;
     padding: 15px 30px;
 }
@@ -241,10 +246,29 @@ header ul a{
 .row-double ul:first-child{
     border-right: 1px solid #b9bdc1;
 }
+.second-colon-sub li:last-child{
+    border-bottom: 1px solid #b9bdc1;
+}
+.first-colon-sub{
+    border-radius: 3px 0 0 3px;
+}
+.first-colon-sub>li:first-child a{
+    border-radius: 3px 0 0 0;
+}
+.first-colon-sub>li:last-child a{
+    border-radius: 0 0 0 3px;
+}
+.second-colon-sub>li:first-child a{
+    border-radius: 0 3px 0 0;
+}
+.second-colon-sub>li:last-child a{
+    border-radius: 0;
+}
 table{
+    border-collapse: collapse;
     width: 100%;
 }
-table tr{
+table td, th{
     border: 2px solid #c0c1c2;
 }
 thead{
@@ -256,10 +280,10 @@ tbody{
     font-size: 16px;
     color: #2a3644;
 }
-tbody:nth-child(odd) tr{
+tbody tr:nth-child(odd){
     background-color: #f2f2f2;
 }
-tbody:nth-child(even) tr{
+tbody tr:nth-child(even){
     background-color: #e8e8e8;
 }
 .tnumber-name{
