@@ -211,6 +211,17 @@ header ul a{
     background-color: #2a3644;
     border-radius: 3px;
 }
+.main-menu>li:first-child>a{
+    position: relative;
+}
+.main-menu>li:first-child>a:before{
+    content: '';
+    position: absolute;
+    background: url(../images/sprite.png) no-repeat top left;
+    background-position: 0 -39px;
+    width: 16px;
+    height: 13px;
+}
 .main-menu>li,
 .social>li{
     display: inline-block;
@@ -267,49 +278,57 @@ header ul a{
 .second-colon-sub>li:last-child a{
     border-radius: 0;
 }
-table{
+table,
+.table{
+    font-size: 16px;
 	border-radius: 3px;
     border-collapse: collapse;
-		width: 100%;
-		overflow: hidden;
+	width: 100%;
+	overflow: hidden;
 }
-th{
-		border: 1px solid #3f4852;
-		box-sizing: border-box;
-		padding: 15px 25px;	
+th,
+.th{
+	border: 1px solid #3f4852;
+	box-sizing: border-box;
+	padding: 15px 25px;	
 }
-td{
+td,
+.td{
     border: 1px solid #c0c1c2;
-		padding: 15px 20px;
-		box-sizing: border-box;
+	padding: 15px 20px;
+	box-sizing: border-box;
 }
 td:first-child,
-th:first-child{
+th:first-child,
+.td:first-child,
+.th:first-child{
     border-left: 0;
 }
-tr:first-child td{
+tr:first-child td,
+.tr:first-child .td{
     border-top: 0;
 }
-tr:last-child td{
+tr:last-child td,
+.tr:last-child .td{
     border-bottom: 0;
 }
 td:last-child,
-th:last-child{
+th:last-child,
+.td:last-child,
+.th:last-child{
     border-right: 0;
 }
-thead{
-    border-spacing: 0       ;
+thead,
+.thead{
     background-color: #2a3644;
     color: #fff;
 }
-tbody{
-    font-size: 16px;
-    color: #2a3644;
-}
-tbody tr:nth-child(odd){
+tbody tr:nth-child(odd),
+.odd{
     background-color: #f2f2f2;
 }
-tbody tr:nth-child(even){
+tbody tr:nth-child(even),
+.even{
     background-color: #e8e8e8;
 }
 .tnumber-name{
@@ -318,7 +337,7 @@ tbody tr:nth-child(even){
     color: #fff;
 }
 .tcolon-name{
-		text-align: left;
+	text-align: left;
 }
 .tnumber{
     text-align: center;
@@ -330,9 +349,10 @@ tbody tr:nth-child(even){
     width: 505px;
 }
 .ttright{
-		text-align: right;
-		width: 130px;
+	text-align: right;
+	width: 130px;
 }
-tbody>tr:hover{
+tbody>tr:hover,
+.tr:not(:first-child):hover{
     background-color: #c0c1c2;
 }
