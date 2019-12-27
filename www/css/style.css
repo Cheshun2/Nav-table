@@ -211,21 +211,75 @@ header ul a{
     background-color: #2a3644;
     border-radius: 3px;
 }
-.main-menu>li:first-child>a{
+.main-menu>li:first-child>a,
+.fb,
+.tw,
+.inst{
     position: relative;
 }
-.main-menu>li:first-child>a:before{
+.main-menu>li:first-child>a:before,
+.fb:before,
+.tw:before,
+.inst:before{
     content: '';
     position: absolute;
     background: url(../images/sprite.png) no-repeat top left;
+    transition: all 1s ease;
+}
+.main-menu>li:first-child>a:before{
     background-position: 0 -39px;
     width: 16px;
     height: 13px;
+    left: 30px;
+    top: 17px;
+}
+.fb:before{
+    background-position: 0 0;
+    width: 9px;
+    height: 17px;
+}
+.fb:hover:before{
+    background-position: 0 -19px;
+}
+.tw:before{
+    background-position: -11px 0;
+    width: 16px;
+    height: 14px;
+    top: 18px;
+}
+.tw:hover:before{
+    background-position: -11px -19px;
+}
+.inst:before{
+    background-position: -29px 0;
+    width: 14px;
+    height: 14px;
+    top: 18px;
+}
+.inst:hover:before{
+    background-position: -29px -20px;
+}
+.main-menu>li:first-child>a:hover:before,
+.fb:hover:before,
+.tw:hover:before,
+.inst:hover:before{
+    transition: all 1s ease;
+}
+.main-menu>li:first-child>a:hover:before{
+    background-position: 0 -54px;
+}
+.social a{
+    display: block;
+    padding: 15px 15px;
+}
+.social a:last-child{
+    padding-right: 30px;
 }
 .main-menu>li,
 .social>li{
     display: inline-block;
 }
+
 .third-menu li{
     font-size: 16px;
 }
