@@ -77,7 +77,7 @@ ul{
 .kitchen-sub>li:first-child a{
     border-radius: 3px 3px 0 0;
 }
-.kitchen-sub>li:last-child a{
+.kitchen-sub>li:last-child>a{
     border-radius: 0 0 3px 3px;
 }
 .menu>li:hover>a,
@@ -122,12 +122,16 @@ ul{
 }
 .second-sub{
     left: 100%;
-    top: 52%;
+    top: 0;
     padding-left: 5px;
 }
 .last-sub{
     right: 100%;
-    top: 77%;
+    top: 0;
+    padding-right: 5px;
+}
+.row-sub li{
+    position: relative;
 }
 .kitchen-sub{
     font-size: 15px;
@@ -192,6 +196,7 @@ header ul a{
 }
 .cell{
     display: table-cell;
+    font-style: normal;
     text-align: center;
 }
 .cell li{
@@ -405,6 +410,7 @@ tbody tr:nth-child(even),
 }
 .people{
     width: 505px;
+    text-align: left;
 }
 .ttright{
 	text-align: right;
