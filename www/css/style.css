@@ -338,7 +338,9 @@ table,
 	border-radius: 3px;
     border-collapse: collapse;
 	width: 100%;
-	overflow: hidden;
+}
+.hidden{
+    overflow: hidden;
 }
 th,
 .th{
