@@ -168,6 +168,8 @@ h2{
     color: #bfbfbf;
     text-transform: uppercase;
     margin-top: 0;
+    padding-bottom: 28px;
+    margin-bottom: 0;
 }
 .kitchen-menu,
 .menu{
